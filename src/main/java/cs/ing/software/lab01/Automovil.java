@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo {
 
         if (_litros > espacioLibre)
         {
-            return "Automovil no se puede reabastecer el tanque, esta lleno";
+            return "Automovil no se puede reabastecer el tanque, esta lleno.";
 
         }
         else{

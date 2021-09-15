@@ -8,7 +8,7 @@ public class Camion extends Vehiculo{
         double espacioLibre = this.capacidadTanque - this.cantidadCombustible;
         if (_litros > espacioLibre)
         {
-            return "Camion no se puede reabastecer el tanque, esta lleno";
+            return "Camion no se puede reabastecer el tanque, esta lleno.";
 
         }
         else{
@@ -22,7 +22,7 @@ public class Camion extends Vehiculo{
     String Manejar(double _km) {
         double combustibleRequiere = _km*this.consumoCombustible;
         if(cantidadCombustible-combustibleRequiere<0){
-            return "Camion necesita reabastecimiento de combustible";
+            return "Camion necesita reabastecimiento de combustible.";
         }
         else{
             this.cantidadCombustible -=combustibleRequiere;

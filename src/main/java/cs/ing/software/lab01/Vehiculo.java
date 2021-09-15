@@ -18,11 +18,11 @@ public class Vehiculo {
     String Manejar(double _km){
         double combustibleRequiere = _km*this.consumoCombustible;
         if(cantidadCombustible-combustibleRequiere<0){
-            return ("Vehiculo necesita reabastecimiento de combustible");
+            return ("Vehiculo necesita reabastecimiento de combustible.");
         }
         else{
             this.cantidadCombustible -=combustibleRequiere;
-            return ("Vehiculo viajó " +(_km)+" km y aún tiene " +String.format("%.2f",cantidadCombustible,2)+ " de combustible");
+            return ("Vehiculo viajó " +(_km)+" km y aún tiene " +String.format("%.2f",cantidadCombustible,2)+ " de combustible.");
         }
     }
 
